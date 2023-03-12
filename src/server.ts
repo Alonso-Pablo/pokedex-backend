@@ -27,7 +27,8 @@ export class Server {
     const router = Router();
     router.use(cors());
     router.use(errorHandler());
-    this.app.use(router);
+    this.app.use('/api', router)
+
     registerRoutes(router);
 
     this.app.get('/', (req: Request, res: Response) => {
