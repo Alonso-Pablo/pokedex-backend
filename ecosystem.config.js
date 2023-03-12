@@ -2,8 +2,8 @@ module.exports = {
   apps: [
     {
       name: 'pokedex_backend',
-      script: './src/start.ts',
-      // instances: -1,
+      script: './dist/src/start.js',
+      instances: -1,
       env: {
         NODE_ENV: "development",
       },
