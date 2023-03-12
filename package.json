@@ -7,8 +7,8 @@
     "dev": "ts-node-dev --ignore-watch node_modules  ./src/start.ts",
     "build": "npm run build:clean && tsc -p tsconfig.prod.json",
     "build:clean": "rm -r dist; exit 0",
-    "prod": "pm2 startOrRestart ecosystem.config.js --env production",
-    "start": "pm2-runtime start ecosystem.config.js --env production"
+    "start": "node ./dist/src/start.js",
+    "start:pm2": "pm2-runtime start ecosystem.config.js --env production"
   },
   "keywords": [
     "express"
