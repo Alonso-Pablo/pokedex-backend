@@ -1,4 +1,4 @@
-export type Team = 'rojo' | 'amarillo' | 'azul';
+export type Team = 'red' | 'yellow' | 'blue';
 
 export class User {
   _id?: string | null;
