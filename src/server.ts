@@ -24,8 +24,8 @@ export class Server {
     this.app.use(helmet.hidePoweredBy());
     this.app.use(helmet.frameguard({ action: 'deny' }));
     this.app.use(ErrorHandler.catch);
+    this.app.use(cors())
     const router = Router();
-    router.use(cors());
     router.use(errorHandler());
     this.app.use('/api', router)
 
