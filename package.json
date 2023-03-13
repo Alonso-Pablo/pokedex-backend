@@ -4,6 +4,8 @@
   "description": "pokedex backend",
   "main": "start.js",
   "scripts": {
+    "docker:up": "cd docker && docker-compose --env-file ./../.env up && cd ../",
+    "docker:down": "cd docker && docker-compose down && cd ../",
     "dev": "ts-node-dev --ignore-watch node_modules  ./src/start.ts",
     "build": "npm run build:clean && tsc -p tsconfig.prod.json",
     "build:clean": "rm -r dist; exit 0",
