@@ -25,7 +25,7 @@ TOKEN_SECRET= Una cadena de letras y numeros muy larga y segura.
 ## Comandos:
 - **Correr** en local:
   ```
-  npm run dev
+  npm run dev         // Inicia la app con node en modo watch.
   ```
   ```
   npm run docker:up   // Inicia la app en un container de Docker.
@@ -39,7 +39,7 @@ TOKEN_SECRET= Una cadena de letras y numeros muy larga y segura.
 
 - Correr en **producción sin clusters**:
   ```
-  npm run start
+  npm run start       // Inicia la app con node
   ```
 
 - Correr en **producción con clusters**:
