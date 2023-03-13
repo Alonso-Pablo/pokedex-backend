@@ -7,7 +7,7 @@ require('dotenv').config()
 
 const totalCPUs = os.cpus().length;
 
-if (cluster.isPrimary) {
+if (cluster.isMaster) {
   console.log(`Number of CPUs is ${totalCPUs}`);
   console.log(`Master ${process.pid} is running`);
  
