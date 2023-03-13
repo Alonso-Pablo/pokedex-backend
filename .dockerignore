@@ -1,9 +1,7 @@
 .dockerignore
 .git
 .env.example
-.gitignore
 ecosystem.config.js
 docker-compose.yml
 README.md
-tsconfig.prod.json
 dist
