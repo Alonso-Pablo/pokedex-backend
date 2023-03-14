@@ -1,5 +1,4 @@
 import bodyParser from 'body-parser';
-import errorHandler from 'errorhandler';
 import express, { Request, Response } from 'express';
 import Router from 'express-promise-router';
 import helmet from 'helmet';
@@ -26,7 +25,6 @@ export class Server {
     this.app.use(ErrorHandler.catch);
     this.app.use(cors())
     const router = Router();
-    router.use(errorHandler());
     this.app.use('/api', router)
 
     registerRoutes(router);
